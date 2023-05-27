@@ -15,4 +15,5 @@ chrome.contextMenus.onClicked.addListener(function(info, tab){
     baseURl = "https://www.vocabvault.study/";
     // var newURL = baseURl + info.selectionText;
     chrome.tabs.create({ url:baseURl});
+    chrome.tabs.sendMessage(tab.id, { textInput: message.text });
 });
