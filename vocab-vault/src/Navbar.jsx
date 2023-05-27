@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import React, { useState } from 'react';
-import logo from '../vocab-vault-logo.jpeg';
+import logo from './images/vocab-vault-logo.jpeg';
 
 
 export default function Navbar() {
