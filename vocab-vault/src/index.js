@@ -1,10 +1,12 @@
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
-import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
-import Contact from "./pages/Contact";
+import History from "./pages/History";
+import Materials from "./pages/Materials";
+import Vocab from "./pages/Vocab";
 
+
+import './styles.css';
 import './App.css';
 
 export default function App() {
@@ -12,10 +14,10 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="home" element={<Home/>} />
+          <Route index element={<History/>} />
+          <Route path="History" element={<History/>} />
+          <Route path="Materials" element={<Materials/>} />
+          <Route path="Vocab" element={<Vocab/>} />
           
         </Route>
       </Routes>
