@@ -13,8 +13,15 @@ For practice:
 Import or insert from the web imaages for flashcards.
 Provide example sentences in different contexts with GPT and provide the ability to translate them.
 System to encourage daily use?
+Profile system, authentication, vocab section, practice section, history, maybe something like calendar similar to github contributions calendar.
 
 
 Keywords:
 Target Language = Language you intend to learn
 Comprehensible Input = Something the user can understand ~80% of
+
+
+Technologies/Languages:
+JavaScript/HTML/CSS/
+MySQL
+
