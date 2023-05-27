@@ -12,7 +12,7 @@ chrome.contextMenus.create({
 
 chrome.contextMenus.onClicked.addListener(function(info, tab){
     // temp code -> need to store info.selectionText and pass it through 
-    baseURl = "https://en.wikipedia.org/wiki/";
-    var newURL = baseURl + info.selectionText;
-    chrome.tabs.create({ url: newURL});
+    baseURl = "https://www.vocabvault.study/";
+    // var newURL = baseURl + info.selectionText;
+    chrome.tabs.create({ url:baseURl});
 });

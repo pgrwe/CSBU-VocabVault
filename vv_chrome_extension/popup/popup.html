@@ -7,13 +7,40 @@
       background: rgb(245, 177, 92);
       font-size: large;
     }
+      body {
+        width: 300px;
+        font-family: Arial, sans-serif;
+      }
+      textarea {
+        width: 100%;
+        height: 100px;
+        resize: none;
+      }
+      select {
+        width: 100%;
+        margin-top: 10px;
+      }
   </style>
 </head>
   <body>
     <h1><center>Welcome to Vocab Vault!</center></h1>
     <p><center>For all your language learning needs</center></p>
+    <textarea id="inputText" placeholder="Enter text to translate"></textarea>
+    <select id="sourceLanguage">
+      <option value="en">English</option>
+      <option value="es">Spanish</option>
+      <option value="fr">French</option>
+    </select>
+    <select id="targetLanguage">
+      <option value="en">English</option>
+      <option value="es">Spanish</option>
+      <option value="fr">French</option>
+    </select>
+    <button id="translateButton">Translate</button>
+    <p>Translated text will be displayed here:</p>
+    <p id="translatedText"></p>
     <p style="text-align:center;"> <img src = "../images/csbulogo128.png" id = "logo"  > </p>
-    <button id = "gotowebsite">Go to the official webpage!</button>
+    <button onclick="gotoVault()" id = "gotowebsite">Go to the official webpage!</button>
     <script src="popup.js"></script>
   </body>
 </html>
