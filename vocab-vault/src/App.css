@@ -1,9 +1,12 @@
 body {
-    padding:60px;
+    padding:10px;
+    padding-right:500px;
     display: flex;
+    font-size: 30px;
     justify-content: center;
     align-items: top;
-    height: 100vh;
+    height: 200vh;
+    position: fixed;
     
   }
   
