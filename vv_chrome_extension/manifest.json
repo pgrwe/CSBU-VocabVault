@@ -3,7 +3,7 @@
   "name": "VocabVault",
   "version": "1.0",
   "description": "Chrome extension to keep track of your language learning progress",
-  "permissions": ["contextMenus","activeTab", "scripting"],
+  "permissions": ["identity","contextMenus","activeTab", "scripting"],
 
   "action": {
     "default_popup": "popup/popup.html",
@@ -31,5 +31,9 @@
 
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "oauth2": {
+        "client_id": "1075673415903-gt3ktiodkj3ij11ifvgle3df5se49h4t.apps.googleusercontent.com",
+        "scopes": []
+      }
 }
