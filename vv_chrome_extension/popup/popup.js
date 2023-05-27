@@ -9,7 +9,8 @@ document.getElementById("translateButton").addEventListener("click", function ()
     return;
   }
 
-  const apiUrl = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=${sourceLanguage}&tl=${targetLanguage}&dt=t&q=${encodeURIComponent(inputText)}`;
+  const apiKey = "AIzaSyCLfbgcdr4Xc8YWP95saMbqPgcKbtolKDg";
+  const apiUrl = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}&source=${sourceLanguage}&target=${targetLanguage}&q=${encodeURIComponent(inputText)}`;
 
   fetch(apiUrl)
     .then((response) => response.json())
@@ -21,3 +22,8 @@ document.getElementById("translateButton").addEventListener("click", function ()
       translatedText.textContent = "An error occurred while translating the text.";
     });
 });
+
+document.getElementById("gotoVault").addEventListener("click", function(){
+    const vvURL = "https://www.vocabvault.study/" 
+    chrome.tabs.create({ url:vvURL});
+})
