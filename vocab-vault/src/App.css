@@ -7,7 +7,7 @@ body {
     align-items: top;
     height: 200vh;
     position: fixed;
-    
+    background-color:#E3C565;
   }
   
   .search-container {
@@ -30,6 +30,7 @@ body {
     
   }
   
+  
   .search-container button {
     padding: 8px 12px;
     background-color: #007bff;
@@ -39,6 +40,19 @@ body {
     margin-left: 8px;
     cursor: pointer;
     
+  }
+
+  a:link, a:visited {
+    
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: #00A68D;
   }
   
   
