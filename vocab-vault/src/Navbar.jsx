@@ -1,15 +1,25 @@
+import './App.css';
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import React, { useState } from 'react';
+import logo from '/Users/davidramirez/Desktop/Builds/CSBU-VocabVault/vocab-vault/src/vocal-vault-logo.jpeg';
+
+
 export default function Navbar() {
-  return <nav className = "nav">
-      <a href= "/" className="title"> VocabVault </a>
+
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+  
+  <nav className = "nav">
+      <a href= "/" className="title"><img src={logo} alt="Logo" height='150px' /></a>
       <ul>
-        <li><a href="/History"></a>History</li>
-        <li><a href="/Materials"></a>Materials</li>
-        <li><a href="/Vocab"></a>Vocab</li>
+        <li><Link to="/History">History</Link></li>
+        <li><Link to="/Materials">Materials</Link></li>
+        <li><Link to="/Vocab">Vocab</Link></li>
 
       </ul>
   </nav>
 
-  
+  )
 }
 
 
