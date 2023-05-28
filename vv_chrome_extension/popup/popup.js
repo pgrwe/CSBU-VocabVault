@@ -9,7 +9,7 @@ document.getElementById("translateButton").addEventListener("click", function ()
     return;
   }
 
-  const apiKey = "AIzaSyCLfbgcdr4Xc8YWP95saMbqPgcKbtolKDg";
+  const apiKey = "api goes here";
   const apiUrl = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}&source=${sourceLanguage}&target=${targetLanguage}&q=${encodeURIComponent(inputText)}`;
 
   fetch(apiUrl)
